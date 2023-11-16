@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A.H Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!------ Include the above in your HEAD tag ---------->
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <!-- header container start-->
+
+      <div class="header">
+        <img src="Images/logo.png" alt="Logo" width="100" height="100" />
+        <div class="searchBar">
+          <div class="innerSeachBarLeft">
+            <p class="allCategories">All Categories</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+            <p class="allCategories">|</p>
+            <p class="allCategories allCategoriesSearch">
+              SEARCH ENTIRE SHOP HERE...
+            </p>
+          </div>
+          <div class="innerSeachBarRight">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="iconContainer">
+          <div class="signinContainer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-box-arrow-in-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+              />
+            </svg>
+            <p class="iconsName">Sign In</p>
+          </div>
+          <div class="signinContainer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-cart3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <p class="iconsName">0.00</p>
+            <div class="iconCountContainer">
+              <p class="iconCount">0</p>
+            </div>
+          </div>
+        </div>
+      <div class="line"></div>
+
+      </div>
+
+      <!-- header container end-->
+
+      
+
+      <!-- header container for mobile start-->
+
+      <div class="headerMobile">
+        <img src="Images/logo.png" alt="Logo" width="100" height="100" />
+        <div class="searchBar">
+          <div class="innerSeachBarLeft">
+            <p class="allCategories allCategoriesSearch">
+              SEARCH ENTIRE SHOP HERE...
+            </p>
+          </div>
+          <div class="searchIcon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+        </div>
+    </div>
+    <p class="dummyText">Lisa Carpet Ivory And Light Blue Lisa Carpet Ivory And Light Blue Lisa Carpet Ivory And Light Blue Lisa Carpet Ivory </p>
+      
+      <!-- header container for mobile end-->
+
+      <!-- all categories desktop start-->
+      <div class="allCategoriesContainer">
+        <div class="allCategoriesLeft">
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16 "
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+            <p class="menuText">ALL CATEGORIES</p>
+          </div>
+        </div>
+        <div class="offerContainer">
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-gift-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"
+              />
+            </svg>
+            <p class="menuTextNew">OFFERS</p>
+          </div>
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-fire"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"
+              />
+            </svg>
+            <p class="menuTextNew">TRENDING</p>
+          </div>
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="16"
+              fill="currentColor"
+              class="bi bi-lightning-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"
+              />
+            </svg>
+            <p class="menuTextNew">NEW ARRIVALS</p>
+          </div>
+          <div class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="red"
+              class="bi bi-cake2-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m2.899.804.595-.792.598.79A.747.747 0 0 1 4 1.806v4.886c-.354-.06-.689-.127-1-.201V1.813a.747.747 0 0 1-.1-1.01ZM13 1.806v4.685a15.19 15.19 0 0 1-1 .201v-4.88a.747.747 0 0 1-.1-1.007l.595-.792.598.79A.746.746 0 0 1 13 1.806Zm-3 0a.746.746 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v5.17c.341-.013.675-.031 1-.055V1.806Zm-3 0v5.176c-.341-.012-.675-.03-1-.054V1.813a.747.747 0 0 1-.1-1.01l.595-.79.598.789A.747.747 0 0 1 7 1.806Z"
+              />
+              <path
+                d="M4.5 6.988V4.226a22.6 22.6 0 0 1 1-.114V7.16c0 .131.101.24.232.25l.231.017c.332.024.672.043 1.02.055l.258.01a.25.25 0 0 0 .26-.25V4.003a29.015 29.015 0 0 1 1 0V7.24a.25.25 0 0 0 .258.25l.259-.009c.347-.012.687-.03 1.019-.055l.231-.017a.25.25 0 0 0 .232-.25V4.112c.345.031.679.07 1 .114v2.762a.25.25 0 0 0 .292.246l.291-.049c.364-.061.71-.13 1.033-.208l.192-.046a.25.25 0 0 0 .192-.243V4.621c.672.184 1.251.409 1.677.678.415.261.823.655.823 1.2V13.5c0 .546-.408.94-.823 1.201-.44.278-1.043.51-1.745.696-1.41.376-3.33.603-5.432.603-2.102 0-4.022-.227-5.432-.603-.702-.187-1.305-.418-1.745-.696C.408 14.44 0 14.046 0 13.5v-7c0-.546.408-.94.823-1.201.426-.269 1.005-.494 1.677-.678v2.067c0 .116.08.216.192.243l.192.046c.323.077.669.147 1.033.208l.292.05a.25.25 0 0 0 .291-.247ZM1 8.82v1.659a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.938.938 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426V8.833l-.68.907a.938.938 0 0 1-1.17.276 1.938 1.938 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82Z"
+              />
+            </svg>
+            <p class="menuTextNew celeb">CELEBRATIONS & OCCASIONS</p>
+          </div>
+        </div>
+
+        <div class="allCategoriesRight">
+          <div class="homeDeliveryContainer">
+            <p class="homeDeliveryText">HOME</p>
+            <p class="homeDeliveryText">DELIVERY</p>
+          </div>
+          <div class="">
+            <img
+              class="flagContainer"
+              src="Images/a.png"
+              alt="Logo"
+              width="30"
+              height="20"
+            />
+          </div>
+          <div class="arrowDown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+
+          <div class="horizontalLine"></div>
+        </div>
+      </div>
+      <div class="slashes">
+        HOME / HOME & OFFICE FURNISHING / CARPETS & RUGS / CLASSIC CARPETS / USA
+        CARPET IVORY AND LIGHT BLUE
+      </div>
+
+      <!-- all categories desktop end-->
+        <!-- all categories mobiel start-->
+       <div>
+        <div class="mobileNewArrival">
+            
+      
+        <div class="newArrivalContainer">
+            <p class="newArrival">NEW ARRIVAL</p>
+          </div>
+          <div class="reviewsContainer" id="reviewsContainer">
+            <p class="noReviews">No Reviews</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+           
+          </div>
+          <div class="noReviewsContainer" id="noReviewsContainer">
+            <p class="noReviews">Reviews</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="yellow"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="yellow"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="yellow"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="yellow"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+           
+          </div>
+
+        </div>
+       </div>
+       
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="Images/Carpet/b2.png" alt="Los Angeles" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="Images/Carpet/bl4.png" alt="Chicago" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="Images/Carpet/g3.png" alt="New york" style="width:100%;">
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+          <!-- all categories mobile end-->
+
+
+      <!-- details container mobile start-->
+
+     <div class="detailsContainerMobile">
+      <div class="colorContainer">
+        <div>
+            <p>Color : <span >Blue</span></p>
+        </div>
+        <div>
+            <img id="carpetImage" src="Images/Carpet/bl5.png" width="60" height="60"/>
+            <svg id="chevronDown" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down hiddenImage" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            <svg id="chevronRight" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </div>
+        <script src="your_js_file.js"></script>
+    </div>
+
+
+    <div class="horizontal_slider hiddenImage" id="horizontalSlider"  >
+      <div  class="slider_container">
+        <div class="itemSlider">
+          <img class="used" src="Images/Carpet/g5.png" alt="Carpet Image 1" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img  class="unused" src="Images/Carpet/bl4.png" alt="Carpet Image 2" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/g3.png" alt="Carpet Image 3" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/bl2.png" alt="Carpet Image 4" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/bl1.png" alt="Carpet Image 5" width="100" height="100"/>
+        </div>
+
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/b3.png" alt="Carpet Image 1" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img  class="unused" src="Images/Carpet/b4.png" alt="Carpet Image 2" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/bl3.png" alt="Carpet Image 3" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/g2.png" alt="Carpet Image 4" width="100" height="100"/>
+        </div>
+        <div class="itemSlider">
+          <img class="unused" src="Images/Carpet/bl1.png" alt="Carpet Image 5" width="100" height="100"/>
+        </div>
+      </div>
+    </div>
+        <div class="line"></div>
+
+        <div class="colorContainer">
+          <div>
+              <p>Size: <span>150x230cm</span></p>
+          </div>
+          <div>
+              <svg id="chevronDownSize" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down hiddenSizes" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              <svg id="chevronRightSize" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+          </div>
+      </div>
+        
+        <div id="selectSizeContainerId"  class="selectSizeContainer hiddenSizes">
+           <div class="selectSizeContainerIdInner">
+            <div class="first">
+              <p class="firstSize">150x230cm</p>
+              <p class="firstStock">In Stock</p>
+              <div class="firstPrice">
+                <p class="firstSizeQAR">QAR</p>
+                <p class="firstSizeActual">399.0</p>
+              </div>
+            </div>
+            <div class="first">
+              <p class="firstSize">150x230cm</p>
+              <p class="firstStock">In Stock</p>
+              <div class="firstPrice">
+                <p class="firstSizeQAR">QAR</p>
+                <p class="firstSizeActual">399.0</p>
+              </div>
+            </div>
+            <div class="first">
+              <p class="firstSize">150x230cm</p>
+              <p class="firstStock">In Stock</p>
+              <div class="firstPrice">
+                <p class="firstSizeQAR">QAR</p>
+                <p class="firstSizeActual">399.0</p>
+              </div>
+            </div>
+           </div>
+         
+          </div>
+        <div class="line"></div>
+
+        <div class="colorContainers">
+            <div>
+                <p>QAR : <span >399.00</span></p>
+            </div>
+        </div>
+        <div class="newMobileAdd">
+            <div class="addAndSubContainer">
+              <p id="decrements">-</p>
+              <p id="displays">0</p>
+              <p id="increments">+</p>
+              </div>
+              <div  id="addToCardContainersIds" class="addToCardContainerss">
+                <p>ADD TO CART</p>
+              </div>
+        </div>
+
+        <div class="overlay" id="overlayElement">
+          <h1>sample tes\tx</h1>
+        </div>
+        <div  class="stockMobile">
+            <div class="freeDeliveryMobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-truck" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+                <p id="deliveryText">FREE DELIVERY</p>
+            </div>
+            <p class="standard">Standard | As per selected time slot</p>
+            <div class="freeDeliveryMobile">  
+                <img
+                src="Images/return-product.png"
+                alt="Logo"
+                width="20"
+                height="20"
+              />
+              <p>Free Returns</p>
+               
+            </div>
+            <p class="standard">You call & we pickup</p>
+            <p class="avail">Availability <span>IN STOCK</span></p>
+            <P class="secure">Payment <span>Secure Transaction</span></P>
+        </div>
+        <div class="line"></div>
+
+
+        <div class="productDetailMobile">
+            <p class="heading">Prodyct Details</p>
+            <div class="productDetailsInnerMobiel">
+                <div class="detailLeft">
+                    <p>Size</p>
+                    <p>Color</p>
+                    <p>Material</p>
+                    <p>Ship From</p>
+                    <p>Warranty</p>
+                </div>
+                <div class="detailRight">
+                    <p>150x230cm</p>
+                    <p>Blue</p>
+            <p>Material Type</p>
+            <p>Supplier</p>
+            <p>Supplier Warranty</p>
+                 
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+  <div class="descriptionlMobile">
+    <div class="descContainer">
+        <p class="heading">Description</p>
+        <div>
+          <svg id="chevDesDown" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down hiddenchevDes" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <svg id="chevDesRight" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+      </div>
+    </div>
+            <p class="hiddenchevDes" id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consequuntur aperiam explicabo incidunt quaerat, nam omnis laudantium soluta at cum quidem animi sunt labore maxime, fuga accusamus dicta deserunt illo.</p>
+        
+        </div>
+        <div class="line"></div>
+        <p class="alsoLike">You Might Also Like...</p>
+
+
+        <div class="horizontal_slider" id="horizontalSlider"  >
+          <div  class="slider_container">
+            <div class="itemSliders">
+              <img  src="Images/Carpet/bl5.png" alt="Carpet Image 1" width="100" height="100"/>
+              <p>Silk Carpet </p>
+              <p class="off">9% off <span>$250</span> </p>
+            </div>
+            <div class="itemSliders">
+              <img   src="Images/Carpet/bl4.png" alt="Carpet Image 2" width="100" height="100"/>
+              <p>Silk Carpet </p>
+              <p class="off">9% off <span>$250</span> </p>
+            </div>
+            <div class="itemSliders">
+              <img  src="Images/Carpet/bl3.png" alt="Carpet Image 3" width="100" height="100"/>
+              <p>Silk Carpet </p>
+              <p class="off">9% off <span>$250</span> </p>
+            </div>
+            <div class="itemSliders">
+              <img  src="Images/Carpet/bl2.png" alt="Carpet Image 4" width="100" height="100"/>
+              <p>Silk Carpet </p>
+              <p class="off">9% off <span>$250</span> </p>
+            </div>
+            <div class="itemSliders">
+              <img  src="Images/Carpet/bl1.png" alt="Carpet Image 5" width="100" height="100"/>
+              <p>Silk Carpet </p>
+              <p class="off">9% off  <span>$250</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="addReviewContainer">
+            <div class="startContainer">
+               <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+               </div>
+                  <p class="noReviewText">No Reviews</p>
+                </div>
+                <div class="review">
+                    
+                    <p class="addReviewText">Add Review</p>
+                    <svg id="chevDesDownAlso" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down hiddenchevDesAlso" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                  <svg id="chevDesRightAlso" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </div>
+            </div>
+            <div class="addReviewMobile hiddenchevDesAlso" id="addReviewMobileId">   
+                <div class="innerReviewModal">
+    
+                    <p for="name">NAME</p></div> 
+                    <input type="text" id="name" name="NAME" placeholder="Please Enter Your Name" />      
+                    <p for="summary">SUMMARY</p>
+                    <input type="text" id="summary" name="summary" placeholder="Please summary of the review" />
+                    <label class="reviewText" for="review">Review</label>
+                    <textarea >Write your review here...</textarea>
+                    <button class="bottoMButton">SUBMIT REVIEW</button>
+                </div> 
+            </div>
+         
+          
+        </div>
+       
+      <!-- details container mobile end-->
+      <!-- details container desktop start-->
+
+      <div class="detailsContainer" >
+        <div class="imageContainer">
+          <img class="imageContainerImage" src="Images/Carpet/bl1.png" alt="Responsive image"/>
+          <div class="multiImageContainer" onclick="showImage(event)">
+              <img src="Images/Carpet/bl1.png" alt="Logo" width="76" height="80" style="border: 2px solid green;"/>
+              <img src="Images/Carpet/bl2.png" alt="Logo" width="76" height="80"/>
+              <img src="Images/Carpet/bl3.png" alt="Logo" width="76" height="80"/>
+              <img src="Images/Carpet/bl4.png" alt="Logo" width="76" height="80"/>
+              <img src="Images/Carpet/bl5.png" alt="Logo" width="76" height="80"/>
+          </div>
+          <div class="previewContainer" id="previewContainer"></div>
+      
+          <script src="your-separate-js-file.js"></script>
+      </div>
+        <div class="details">
+          <p class="lisa">Lisa Carpet Ivory And Light Blue</p>
+          <div class="newArrivalContainer">
+            <p class="newArrival">NEW ARRIVAL</p>
+          </div>
+          <div class="reviewsContainer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              fill="#bcbcbc"
+              class="bi bi-star-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+              />
+            </svg>
+            <p class="noReviews">No Reviews</p>
+          </div>
+          <p class="sku">SKU: 4704000029868</p>
+          <p class="desc">Description</p>
+          <p class="descPara">
+            The top layer is a fluffy material and the interlayer is memory
+            sponge. The rug for bedside is beyond soft and comfy. Have a non
+            slip surface on the rug's back. Let your children and pets can
+            safely play on the fur carpets.
+          </p>
+          <div class="line"></div>
+          <div class="priceContainer">
+            <p class="priceQAR">QAR</p>
+            <p class="price399">399.00</p>
+            <p class="deduction">-49%</p>
+            <p class="sku skuCut"><s>QAR 1,750.00</s></p>
+          </div>
+          <div class="priceContainer">
+            <p class="sku">Shipping</p>
+            <p class="freeDelivery">FREE DELIVERY</p>
+          </div>
+          <div class="line"></div>
+          <div class="priceContainer">
+            <p class="sku">Color Name :</p>
+            <p id="freeDeliveryIds" class="freeDelivery">Blue</p>
+          </div>
+          <div class="selectColorContainer" onclick="showImageSelect(event)">
+            <img src="Images/Carpet/bl1.png" alt="Logo" width="70" height="70" />
+            <img src="Images/Carpet/g1.png" alt="Logo" width="70" height="70" />
+            <img src="Images/Carpet/b1.png" alt="Logo" width="70" height="70" />
+          </div>
+          <div class="line"></div>
+          <div class="priceContainer">
+            <p class="sku">Carpet Size :</p>
+            <p class="size120">150x230cm</p>
+          </div>
+          <div class="selectSizeContainer">
+            <div class="first">
+              <p class="firstSize">150x230cm</p>
+              <p class="firstStock">In Stock</p>
+              <div class="firstPrice">
+                <p class="firstSizeQAR">QAR</p>
+                <p class="firstSizeActual">399.00</p>
+              </div>
+            </div>
+            <div class="first">
+              <p class="firstSize a">200x300cm</p>
+              <p class="firstStock">In Stock</p>
+              <div class="firstPrice">
+                <p class="firstSizeQAR">QAR</p>
+                <p class="firstSizeActual">497.00</p>
+              </div>
+            </div>
+            <div class="first">
+              <p class="firstSize a">250x350cm</p>
+              <p class="firstStock">In Stock</p>
+              <div class="firstPrice">
+                <p class="firstSizeQAR">QAR</p>
+                <p class="firstSizeActual">797.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cartContainer">
+          <div class="cartInner">
+            <div class="sku">Total</div>
+            <div class="priceContainer">
+              <p class="priceQAR">QAR</p>
+              <p id="price399Id" class="price399">399.00</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku">Size</div>
+            <div class="priceContainer">
+              <p id="sizeId" class="desc">150x230cm</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku">Color</div>
+            <div class="priceContainer">
+              <p id="descId" class="desc">blue</p>
+            </div>
+          </div>
+          <div class="cartInner"  onclick="toggleStockStatus()">
+            <div class="sku">Availability</div>
+            <div class="priceContainer">
+              <p id="freeDeliveryId" class="freeDelivery">IN STOCK</p>
+              <p id="outOfStockId" class="outOfStock">OUT OF STOCK</p>
+            </div>
+          </div>
+       
+          <div id="cartInnerId" class="cartInner">
+            <div class="sku">Quantity</div>
+            <div class="addAndSubContainer">
+              <p id="decrement">-</p>
+              <p id="display">0</p>
+              <p id="increment">+</p>
+            </div>
+          </div>
+          <p  id="notifiedId" class="notified">You'll be notified when item is back in stock. </p>
+          <div id="addToCardContainersId" class="addToCardContainers">
+            <p>ADD TO CART</p>
+          </div>
+          <div id="addToWishlistContainerId" class="addToWishlistContainer">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e92662" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                      </svg> ADD TO WISHLIST</p>
+                </div>
+
+          <div class="cartInner">
+            <div class="sku">Delivery</div>
+            <div class="priceContainer">
+              <p class="desc">Standard</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku"></div>
+            <div class="">
+              <p class="descc">As per selected time slot.</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku"></div>
+            <div class="">
+              <p class="freeDelivery">FREE DELIVERY</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku">Payment</div>
+            <div class="priceContainer">
+              <p class="desc desccc">Secure transaction</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku">Ships From</div>
+            <div class="priceContainer">
+              <p class="desc">Supplier</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku">Payment</div>
+            <div class="priceContainer">
+              <p class="desc desccc">
+                <img
+                  src="Images/return-product.png"
+                  alt="Logo"
+                  width="20"
+                  height="20"
+                />
+                Free Returns
+              </p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku">Warranty</div>
+            <div class="priceContainer">
+              <p class="desc">Supplier Warranty</p>
+            </div>
+          </div>
+          <div class="cartInner">
+            <div class="sku"></div>
+            <div class="priceContainer">
+              <p class="desc">
+                <img
+                  src="Images/oneYear.png"
+                  alt="Logo"
+                  width="50"
+                  height="50"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- details container desktop end-->
+      <!-- other items container desktop end-->
+
+      
+      <div class="container">
+          <!-- <div class="line"></div> -->
+        <div class="row">
+          <div
+            class="MultiCarousel"
+            data-items="1,2,3,4"
+            data-slide="1"
+            id="MultiCarousel"
+            data-interval="1000"
+          >
+            <div class="MultiCarousel-inner">
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/bl2.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div  id="addToCardContainerId" class="addToCardContainerList addToCardButton">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/g3.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div id="addToCardContainerId" class="addToCardContainerList addToCardButton">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/g4.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div id="addToCardContainerId" class="addToCardContainerList addToCardButton">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/bl5.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div id="addToCardContainerId" class="addToCardContainerList addToCardButton">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/b1.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div id="addToCardContainerId" class="addToCardContainerList">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/bl3.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div id="addToCardContainerId" class="addToCardContainerList">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/g2.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <div id="addToCardContainerId" class="addToCardContainerList">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="scrollOne">
+                  <img
+                    src="Images/Carpet/g5.png"
+                    alt="Logo"
+                    width="76"
+                    height="80"
+                  />
+                  <div>
+                    <p>Silk Happy Carpet Dark Red</p>
+                    <div class="priceContainer">
+                      <p class="sku">QAR</p>
+                      <p class="size120">229.72</p>
+                      <p class="cutPrice"><s>250.50</s></p>
+                    </div>
+                    <ARea></ARea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+          </div>
+        </div>
+      </div>
+      <!-- other items container desktop end-->
+
+
+       <!-- review desktop start -->
+       <div class="rerviewMainContainer">
+        <div class="addReviewContainer">
+            <div class="startContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bcbcbc" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </div>
+                <p class="noReviewText">No Reviews</p>
+                <div class="review" id="addReview"> 
+                  <p class="addReviewText" >Add Review</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" id="chevronRight" style="display: none;">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" id="chevronDown">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+              </div>
+        </div>
+
+        <div class="textFieldsContainer" id="reviewContainer" style="display: block;">
+            <div class="nameAndSummary">
+                    <div>
+                        <p for="name">NAME</p></div> </br>
+                        <input type="text" id="name" name="NAME" placeholder="Please Enter Your Name" /></br>
+                    </div>
+
+                    <div>
+                        <p for="summary">SUMMARY</p></br>
+                        <input type="text" id="summary" name="summary" placeholder="Please summary of the review" /></br>
+                    </div>
+                    <label class="reviewText" for="review">Review</label></br>
+                    <textarea >Write your review here...</textarea>
+                    <button>SUBMIT REVIEW</button>
+            </div>
+        </div>
+
+
+
+      </div>
+      <!-- review desktop end -->
+
+      <!-- footer desktop start -->
+      
+      <div class="footerMainContainer">
+          <div class="line"></div>
+        <div class="footerInnerContainer">
+
+            <div class="footerLeft">
+                <img src="Images/logo.png" alt="Logo" width="200" height="200"  />
+                <div class="loc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                      <p>Ansar Galery - Barwa Commercial Avenue</p>
+
+                </div>
+                <div class="loc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    <p>+974 4445 2555</p>
+                </div>
+                <div class="loc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                      </svg>
+                      <p>customercare@ahmarket.com</p>
+                </div>
+
+                <div class="fbInsta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg>
+                </div>
+            </div>
+
+
+
+            <div class="footerCenter">
+                <div class="footerInnerCenter">
+                    <div class="cols">
+                        <p class="head">INFORNATIONS</p>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>F.A.Q.'s</p>
+                        </div>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>About us</p>
+                        </div>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Delivery Information</p>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <p class="head">OUR SERVICES</p>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Privacy Policy</p>
+                        </div>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Terms & Conditions</p>
+                        </div>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Contact Us</p>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <p class="head">PAYMENT & SHIPPING</p>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Payment Methods</p>
+                        </div>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Shipping Guide</p>
+                        </div>
+                        <div class="items">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                              <p>Return Policy</p>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <p class="head">DOWNLOAD OUR MOBILE APP</p>
+                        <img src="Images/google.png" alt="Logo" width="180" height="100" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="footerRight">
+
+                <p class="signUp">SIGN UP FOR NEWSLETTER</p>
+                <p class="sub">Subscribe to our newsletter to get discounts and offers</p>
+                <div class="containers" >
+                    <input type="text"/>
+                    <span class="right">
+                        <button>Subscribe</button>
+                    </span>
+                </div>
+                <div class="imgContainer">
+
+                    <img src="Images/texh.png" alt="Logo" width="180" height="60" />
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="bottonContainer">
+        <div class="bottomIcons">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#b9d737" class="bi bi-house-fill" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+              <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+            </svg>
+            <p>Home</p>
+          </div>
+           <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <p>Categories</p>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-gift-fill" viewBox="0 0 16 16">
+              <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+            </svg>
+            <p>Offers</p>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-cart-fill" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <p>Cart</p>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            <p>My Account</p>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+      <!-- footer desktop end -->
+     
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
